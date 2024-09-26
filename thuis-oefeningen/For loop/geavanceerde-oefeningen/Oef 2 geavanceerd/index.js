@@ -1,22 +1,17 @@
 /*
-Print priemgetallen: Gebruik een for-loop om alle priemgetallen tussen 1 en 100 te
-printen.*/
-// priemgetallen = 1 2 3 5 8 13..
+Bereken de faculteit van een getal: Vraag een getal aan de gebruiker en gebruik een
+for-loop om de faculteit (factorial) van dat getal te berekenen.*/
 
-// getallen niet deelbaar 2, 3 of 5;
-// de getallen 2, 3 en 5 die zelf een priem getal zijn moeten uitzondering krijgen
+// faculteit: 5!=5×4×3×2×1=120
+// loop die naar beneden gaat tot 1 en dan in de loop een berekening maakt van alle uitgekomen getallen
 
-/*
-for ( let i = 2 ; i<100 ; i++ ){
-    if (i%2!==0 && i%3!==0 && i%5!==0){
-        console.log(i);
-    }
-}*/
+let getal = parseInt(prompt("geef een getal"));
+let faculteit = 1;
 
-for (let i = 2; i < 100; i++) {
-    if (i === 2 || i === 3 || i === 5) {
-        console.log(i);  // Print de priemgetallen 2, 3, en 5
-    } else if (i % 2 !== 0 && i % 3 !== 0 && i % 5 !== 0) {
-        console.log(i);  // Print andere priemgetallen
-    }
+for (let i= getal ; i >= 1 ; i-- ){
+
+    /*faculteit = faculteit * i;*/
+    faculteit *= i;
 }
+console.log(faculteit);
+
