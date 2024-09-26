@@ -1,24 +1,18 @@
+
 /*
 Print de veelvouden van een gegeven getal: Vraag een getal aan de gebruiker en print
 de veelvouden van dat getal tot 100.
 */
 
-// getal vragen aan gebruiken
-// stel dat getal 5 is, dan doe je 5 + 5 + 5 + 5 ... tot aan 100
-
-let getal = parseInt(prompt("Geef een getal"));
-let output = "";
+let veelvoud = parseInt(prompt("Geef een veelvoudgetal"));
+let eindGetal = 100;
 let som = 0;
 
-for(let i = getal ; i * getal <= 100 ; i++ ){
-    if(i<=99){
-        output += `${getal} + `;
-        som = som + getal;
-    }else {
-        output += `${getal}`;
+for(let i = 1 ; i <= eindGetal ; i++ ){
+    som = i * veelvoud;
+    if(som <= eindGetal){
+        console.log(`${i} * ${veelvoud} =`, som);
     }
 }
-console.log(`${output} = ${som}`);
 
-/*?????????????????????????????*/
 
