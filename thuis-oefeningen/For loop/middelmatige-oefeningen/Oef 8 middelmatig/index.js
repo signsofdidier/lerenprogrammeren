@@ -1,27 +1,10 @@
 /*
-Som van de oneven getallen: Gebruik een for-loop om de som van de oneven getallen
-van 1 tot 100 te berekenen.*/
+Print de kwadraten van getallen: Gebruik een for-loop om de kwadraten van de
+getallen van 1 tot 10 te printen (bijv. 1, 4, 9, 16, ..., 100).*/
 
-/*let som = 0;
+let kwadraad = 0;
 
-for ( i=1 ; i<=100; i+= 2 ){
-    som += i;
+for ( let i = 1 ; i<=10 ; i++ ){
+    kwadraad = i * i;
+    console.log(kwadraad);
 }
-
-console.log(som);*/
-
-
-// deze is beter
-let som = 0;
-
-for ( i=1 ; i<=100; i++ ){
-    if(i%2!==0){
-        som += i;
-    }
-}
-
-console.log(som);
-
-
-
-// TIP gebruik % teken om te rest te berekenen bij EVEN en ONEVEN getallen
