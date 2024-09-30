@@ -1,6 +1,6 @@
-git add . |
+git add .
 
-git commit -m "benaming" |
+git commit -m "benaming"
 
 git push
 
